@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HR-Dashboard</title>
+    <!--
+
+    Template 2108 Dashboard
+
+	http://www.tooplate.com/view/2108-dashboard
+
+    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <!-- https://fonts.google.com/specimen/Open+Sans -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" href="css/fullcalendar.min.css">
+    <!-- https://fullcalendar.io/ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="css/tooplate.css">
+    <link rel="stylesheet" href="js/tooplate-scripts.js">
+
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,  
+    title:{
+        text: "Absence Rate"
+    },
+    axisY: {
+        title: "Percentage",
+        valueFormatString: "#0,,.",
+        suffix: "%",
+        stripLines: [{
+            value: 3366500,
+            label: "Average"
+        }]
+    },
+    data: [{
+        yValueFormatString: "#,### Units",
+        xValueFormatString: "YYYY",
+        type: "spline",
+        dataPoints: [
+            {x: new Date(2012, 0), y: 7289000},
+            {x: new Date(2013, 0), y: 7089000},
+            {x: new Date(2014, 0), y: 7019000},
+            {x: new Date(2015, 0), y: 6889000},
+            {x: new Date(2016, 0), y: 3386000},
+            {x: new Date(2017, 0), y: 2394000},
+            {x: new Date(2018, 0), y: 1872000},
+            {x: new Date(2019, 0), y: 1772000},
+            {x: new Date(2020, 0), y: 1672000},
+            
+        ]
+    }]
+});
+chart.render();
+
+}
+</script>
+
+</head>
+
+
+<body id="reportsPage" >
+
+ 
+    <div class="" id="home">
+        <div class="container" >
+            <div class="row">
+                <div class="col-12">
+
+ <div>
+                    <nav class="navbar navbar-expand-xl navbar-light bg-#CB1E31">
+                        <a class="navbar-brand" href="#">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-brightness-low-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8.5 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z"/>
+</svg>
+                            
+                            <strong><em><h1 class="tm-site-title mb-0" style="color:#c2185b">HR Dashboard</h1></strong><em>
+                            
+                        </a>
+                        <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#" style="background-color:transparent; color:white; font-weight:bolder;font-size:14pt; border: 2px solid #c2185b; border-radius: 60px; background-color:#c2185b">HR Dashboard
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false"  style="color:white; font-weight:bolder; font-size:14pt; border: 2px solid #c2185b; border-radius: 60px; background-color:#c2185b">
+                                        Reports
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        
+                                        <a class="dropdown-item" href="#one">Monthly Report</a>
+                                        <a class="dropdown-item" href="#two">Provided Services</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="products.html"  style="color:white; font-weight:bolder; font-size:14pt; border: 2px solid #c2185b; border-radius: 60px; background-color:#c2185b">Employees</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="accounts.html"  style="color:white;font-weight:bolder; font-size:14pt; border: 2px solid #c2185b; border-radius: 60px; background-color:#c2185b">Accounts</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false"  style="color:white;font-weight:bolder; font-size:14pt;border: 2px solid #c2185b; border-radius: 60px; background-color:#c2185b">
+                                        Settings
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#three">Contact us</a>
+                                        
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex" href="login.html">
+                                        <i class="far fa-user mr-2 tm-logout-icon"></i>
+                                        <span  style="color:white; font-weight:bolder; font-size:14pt; border: 2px solid #c2185b; border-radius: 60px; background-color:#c2185b">Login</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+</div>      <hr style="width:100%; color:#c2185b; border-top: 5px solid black; border: 2px solid black; border-radius: 60px; background-color:#c2185b">      <!-- row -->
+
+
+            <div class="row tm-content-row tm-mt-big">
+                <div class="tm-col tm-col-big">
+                    <div class="bg- tm-block h-100">
+                        <strong><h2 class="tm-block-title" style="text-align:center;">Performance</h2></strong>
+                        <canvas id="lineChart"></canvas>
+                    </div>
+                </div>
+                <div class="tm-col tm-col-big">
+                    <div class="bg- tm-block h-100">
+                        <strong><h2 class="tm-block-title" style="text-align:center;">Revenue</h2></strong>
+                        <canvas id="barChart"></canvas>
+                    </div>
+                </div>
+
+
+<div id="chartContainer" style="height: 370px; width: 100%; background-color:transparent;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
+
+                <div class="tm-col tm-col-small">
+                    <div class="bg- tm-block h-100">
+                        <canvas id="pieChart" class="chartjs-render-monitor"></canvas>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="tm-col tm-col-big" style="margin-right:500px;">
+                    <div class="bg- tm-block h-100">
+                        <div class="row">
+                            <div class="col-8">
+                                <h2 class="tm-block-title d-inline-block" id="two" style="text-align:center;">Provided Services</h2>
+
+                            </div>
+                            <div class="col-4 text-right">
+                                <a href="products.html" class="tm-link-black">View All</a>
+                            </div>
+                        </div>
+                        <ol class="tm-list-group tm-list-group-alternate-color tm-list-group-pad-big">
+                            <li class="tm-list-group-item">
+                                Custom Software Development
+                            </li>
+                            <li class="tm-list-group-item">
+                               IT Consulting
+                            </li>
+                            <li class="tm-list-group-item">
+                                Customer Relationship Management Systems
+                            </li>
+                            <li class="tm-list-group-item">
+                                Website Design and Development
+                            </li>
+                            <li class="tm-list-group-item">
+                                Mobile App Design and Development
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                
+
+                    </div>
+                </div>
+                <div class="tm-col tm-col-small" style="margin-left:500px;">
+                    <div class="bg- tm-block h-100">
+                        <h2 class="tm-block-title" id="one" style="width:100;" style="text-align:center;">Monthly Plan</h2>
+                        <ol class="tm-list-group">
+                            
+                            <li class="tm-list-group-item">Read reports<input type="checkbox" ></li>
+                            <li class="tm-list-group-item">Write email<input type="checkbox"></li>
+                            
+                            <li class="tm-list-group-item">Call clients <input type="checkbox" ></li>
+                            <li class="tm-list-group-item">Go to meeting <input type="checkbox" style="pading:15px;"></li>
+                            
+                            <li class="tm-list-group-item">Ask for feedback <input type="checkbox" style="pading:15px;"></li>
+                            
+                            <li class="tm-list-group-item">Meet Supervisor <input type="checkbox" style="pading:15px;"></li>
+                            <li class="tm-list-group-item">Company trip <input type="checkbox" style="pading:15px;"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+</div>
+
+
+
+
+
+<div id="three" style="text-align:center;">
+     
+    <i class="fab fa-twitter" ><a href="https://twitter.com" target="_blank">Twitter</a></i>
+    <i class="fab fa-instagram"style="margin-left:50px"><a href="https://instagram.com" target="_blank">Instagram</a></i>
+    <i class="fas fa-envelope-square" style="margin-left:50px">Email</i>
+    <a href="https://linkedin.com" target="_blank" style="margin-left:50px">Linkedin</a>
+</div>
+
+
+
+            <footer class="row tm-mt-small">
+                <div class="col-12">
+                    <p class="d-inline-block tm-bg- text-black py-2 px-4">
+                        Copyright &copy; 2020. Made by Shega
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- https://jquery.com/download/ -->
+    <script src="js/moment.min.js"></script>
+    <!-- https://momentjs.com/ -->
+    <script src="js/utils.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <!-- http://www.chartjs.org/docs/latest/ -->
+    <script src="js/fullcalendar.min.js"></script>
+    <!-- https://fullcalendar.io/ -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- https://getbootstrap.com/ -->
+    <script src="js/tooplate-scripts.js"></script>
+    <script>
+        let ctxLine,
+            ctxBar,
+            
+            optionsLine,
+            optionsBar,
+          
+            configLine,
+            configBar,
+            
+            lineChart;
+        barChart, pieChart;
+        // DOM is ready
+        $(function () {
+            updateChartOptions();
+            drawLineChart(); // Line Chart
+            drawBarChart(); // Bar Chart
+            
+            drawCalendar(); // Calendar
+
+            $(window).resize(function () {
+                updateChartOptions();
+                updateLineChart();
+                updateBarChart();
+                reloadPage();
+            });
+        })
+    </script>
+
+    
+
+</body>
+</html>
